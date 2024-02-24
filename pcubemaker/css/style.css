@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?fa,ily=quicksand:wght@300;400;500;600;700;&family=Roboto:wght@100;300;400;500;700;900;&display=swap');
+
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important ;
+    outline-offset: 0;
+    
+}
+
+a,
+a:hover{
+    text-decoration: none;
+}
+
+a:hover{
+    color:var(--primary-color) !important;
+}
+
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+
+/* variables define */
+
+:root{
+    --primary-color:#6e0000;
+    --secondary-color:purple;
+    --third-color:rgb(253, 253, 170);
+    --fourth-color:green;
+    --white-color:white;
+    --text-color:grey;
+    --text-gray:lightgrey;
+    --black-color:black;
+    --primary-font: 'Roboto' ,sans-serif;
+    --secondary-font:'quciksand','sans-serif';
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+}
+
+
+::-webkit-scrollbar{
+    width:0.625rem;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+
+/* ......................
+  custom css design
+....................... */
+
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--secondary-color);
+}
+
+h2{
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    line-height: 3rem;
+
+}
+h4{
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+h5{
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+p{
+    color: var(--black-color);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+.main-btn{
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+
+}
+
+.white-btn{
+    padding: 0.625rem 1.875rem;
+    line-height: 25px;
+    background-color: var(--white-color);
+    border: 0.1875rem solid var(--white-color);
+    color: var(--text-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+
+}
+
+.main-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color-color);
+}
+.white-btn:hover{
+    background-color: transparent;
+    color: var(--secondary-color);
+    border-color: var(--white-color);
+}
+
+.wrapper{
+    padding-top: 8.25rem;
+    padding-bottom: 8.25rem;
+}
+
+.text-color{
+    width: 78%;
+    margin: auto;
+}
+
+.counter-section h2,
+.testimonial-section h2,
+.explore-design-text h2{
+    color: var(--third-color);
+}
+
+/* ......................
+ header  design
+....................... */
+
+.navigation-wrap{
+    position: fixed;
+    padding: 0.5px;
+    width: 100%;
+    left: 0;
+    z-index: 100;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item{
+    padding: 0.625em; 
+    transition: all 200ms linear ;
+}
+
+.navbar-toggler-focus{
+    outline:unset ;
+    border: unset;
+    box-shadow: none;
+}
+.nav-link{
+    font-size: 0.9735rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.navigation-wrap .main-btn{
+    padding:0.3125rem  1.375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+
+
+
+/* ......................
+ top banner design
+....................... */
+.top-banner{
+    width: 100%;
+    background: url('../images/banner1.png') no-repeat center;
+    animation-iteration-count: infinite;
+    background-size: cover;
+    padding: 12.875rem 0 9.375rem;
+}
+
+/* ......................
+ counter-section 
+....................... */
+
+.counter-section{
+    background-color: var(--primary-color);
+    padding: 2.5rem 0;
+}
+.counter-section p{
+    color: var(--white-color);
+    text-transform:uppercase ;
+}
+
+/* ......................
+ about-section  design
+....................... */
+.about-section{
+    background:var(--white-color);
+}
+.about-section .card,
+.about-section .card img{
+    border-radius: 8.625rem;
+}
+.about-section .text-sec
+{
+    padding-left: 2rem;
+}
+/* ......................
+ graphic -section  design
+....................... */
+.graphic-type{
+    padding-top: 6.25rem;
+}
+.graphic-type ul li{
+    font-size: 1rem;
+    color: var(--fourth-color);
+    line-height: 32px;
+    position: relative;
+    margin-left: 32px;
+
+}
+.graphic-type ul li::before{
+    position: absolute;
+    left:-2.1875rem;
+    color: var(--primary-color);
+    font: size 1.25rem; 
+    font-family: "font awesome 5.1 free ";
+    content:'\f00c' ;
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align:middle;
+    font-weight: 900;
+}
+.story-section{
+    width: 100%;
+    height: 28.25rem;
+    background: url(../images/story1.png) no-repeat center;
+    background-size: cover;
+    padding-top: 100px;
+    text-align: center;
+}
+.story-section h2{
+    color: var(--primary-color);
+}
+
+/* -----------------------
+-----------------------
+   explore design section design 
+-----------------------
+----------------------- */
+ .explore-design .card{
+    border:none;
+    background-color: transparent;
+    border-radius: 0.9375rem;
+ }
+ .explore-design .card img{
+    border-radius: 0.9375rem;
+    object-fit: cover;
+
+ }
+ .explore-design .card span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+    border-bottom: 0.0625rem solid white;
+ }
+ .explore-design .card del{
+    color:rgb(129, 126, 126);
+    margin-left: 0.5rem;
+ }
+
+ /* -----------------------
+-----------------------
+   Testimonial  section design 
+-----------------------
+----------------------- */
+.testimonial-section{
+    background-color: rgb(105, 164, 252);
+   
+}
+.testimonial-section .carousel-item{
+    margin-top: 3rem;
+    padding: 10rem 3.125rem;
+    background-color: rgb(3, 153, 140);
+    border-radius: 0.9375rem;
+    text-align: center;
+}
+.testimonial-section .carousel-inner img {
+    
+    max-width: 9rem;
+    border-radius: 50%;
+    padding: 0.3125rem;
+
+}
+.testimonial-section .carousel-item .carousel-inner p{
+    font-size: 1.3125rem;
+    line-height: 2.0625rem;
+    padding: 0 11% 0.625rem;
+
+}
+.testimonial-section .carousel-indicators button{
+    bottom: 8.2125rem;
+}
+.testimonial-section .carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 50%;
+    border:none;
+    margin-right: 1rem;
+    opacity: 0.2;
+}
+.testimonial-section .carousel-indicators button.active{
+    opacity: 1;
+}
+/* -----------------------
+-----------------------
+   FAQ section design 
+-----------------------
+----------------------- */
+.FAQ h4 span{
+    color: var(--primary-color);
+    font-size: 1.875rem;
+    margin-right: 0.3125rem;
+
+}
+.book-design{
+    width:100%;
+    background: url(../images/gp\ Banner.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-attachment: 0 71.9125px ;
+    padding: 4.375rem 0;
+}
+
+/* -----------------------
+-----------------------
+   FAQ section design 
+-----------------------
+----------------------- */
+.footer{
+    background: var(--primary-color);
+}
+.footer .footer-link{
+    font-size: 1rem;
+    color: var(--white-color);
+    padding: 0 1.875rem;
+}
+.footer .footer-link:hover{
+    color: var(--white-color)  !important;
+}
+.footer a i{
+    font-size: 1.5rem;
+    color: var(--white-color);
+    padding: 0 1rem;
+}
